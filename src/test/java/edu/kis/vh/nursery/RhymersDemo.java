@@ -4,7 +4,11 @@ import edu.kis.vh.nursery.factory.DefaultRhymersFactory;
 import edu.kis.vh.nursery.factory.RhymersFactory;
 
 class RhymersDemo {
-    
+
+    /**
+     *
+     * @param args
+     */
     public static void main(String[] args) {
         RhymersFactory factory = new DefaultRhymersFactory();
 
@@ -12,6 +16,10 @@ class RhymersDemo {
 
     }
 
+    /**
+     *
+     * @param factory
+     */
     private static void factoryTest(RhymersFactory factory) {
         DefaultCountingOutRhymer[] rhymers = { factory.getStandardRhymer(), factory.getFalseRhymer(),
                 factory.getFIFORhymer(), factory.getHanoiRhymer()};
